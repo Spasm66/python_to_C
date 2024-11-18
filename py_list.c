@@ -50,7 +50,6 @@ void    show_tab(tab *arr)
     printf("]\n");
 }
 
-/*
 int     main(void)
 {
     tab array = (tab){malloc(sizeof(int) * 4), 4, 0};
@@ -82,4 +81,3 @@ int     main(void)
     show_tab(&array);
     free(array.t);
 }
-*/
