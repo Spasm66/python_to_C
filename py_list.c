@@ -53,26 +53,10 @@ void    show_tab(tab *arr)
 int     main(void)
 {
     tab array = (tab){malloc(sizeof(int) * 4), 4, 0};
-    append(&array, 1);
-    append(&array, 2);
-    append(&array, 3);
-    append(&array, 4);
-    append(&array, 5);
-    append(&array, 6);
-    append(&array, 7);
-    append(&array, 8);
-    append(&array, 9);
-    append(&array, 10);
-    append(&array, 11);
-    append(&array, 12);
-    append(&array, 13);
-    append(&array, 14);
-    append(&array, 15);
-    append(&array, 16);
-    append(&array, 17);
-    append(&array, 18);
-    append(&array, 19);
-    append(&array, 20);
+    for (int i = 1; i <= 20; i++)
+    {
+        append(&array, i);
+    }
     printf("%d\n", len(&array));
     show_tab(&array);
     ft_remove(&array);
